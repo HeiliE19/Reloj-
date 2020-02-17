@@ -8,7 +8,7 @@ public class Sesion3 {
         Reloj wacho=new Reloj(12, 44, 30);
         wacho.mostrarHora(); 
         Reloj hora1=new Reloj(22, 30, 40);
-        Reloj hora2= new Reloj(13, 21, 45);
+        Reloj hora2= new Reloj(22, 21, 35);
                 
         int horaA = hora1.getHora();
         int minutoA = hora1.getMinuto();
@@ -34,12 +34,12 @@ public class Sesion3 {
         
         while(hor1<86400 && hor2<86400 && horaA<24 && horaB<24 && minutoA<60 && minutoB<60 && segundoA<60 && segundoB<60){        
             hor1++; hor2++; horaA++; horaB++; minutoA++; minutoB++; segundoA++; 
-            segundoB++; hora3++; hora4++; min++; seg++; hora++; hor2++; 
-            if (horaB>=horaA){
-                System.out.println("han pasado "+hora+"horas, "+min+" minutos y "+seg+" segundos");           
+            segundoB++; hora3++; hora4++; min++; seg++; hora++; hor2++; hor1++; 
+            if (hor2>=hor1){
+                System.out.println("han pasado "+hora+" horas, "+min+" minutos y "+seg+" segundos");           
      }
-                    else if (horaA>=horaB){
-                        System.out.println("Han pasado "+horac+"horas, "+minc+" minutos y "+segc+" segundos");
+                    else if (hor1>=hor2){
+                        System.out.println("Han pasado "+horac+" horas, "+minc+" minutos y "+segc+" segundos");
                  
         }
         
